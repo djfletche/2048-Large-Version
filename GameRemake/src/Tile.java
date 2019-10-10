@@ -90,6 +90,9 @@ public class Tile {
 		}
 		g.setFont(font);
 		
+		//setting the font and using the drawutil
+		// since we are centering the value we divide by two so it is in the center
+		
 		int drawX = WIDTH/2 - DrawUtils.getMessageWidth("" + value, font, g)/2;
 		int drawY = HEIGHT/2 + DrawUtils.getMessageHeight("" + value, font, g)/2;
 		g.drawString("" + value, drawX, drawY);
